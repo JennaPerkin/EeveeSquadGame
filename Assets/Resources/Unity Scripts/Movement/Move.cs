@@ -71,6 +71,10 @@ public class Move : Physics2DObject
 				cachedDirection = movement;
 			}
 			Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
+			if(transform.rotation.z != 0)
+			{
+				transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y + 180, 0f);
+			}
 		}
 	}
 
