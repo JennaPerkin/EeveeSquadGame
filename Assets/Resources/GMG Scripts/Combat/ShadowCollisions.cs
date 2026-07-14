@@ -10,10 +10,10 @@ public class ShadowCollisions : MonoBehaviour
         {
             Debug.Log("Hit Shadow");
             Destroy(collision.gameObject);
-            transform.localScale *= 2;
+            transform.localScale = new Vector3(transform.localScale.x + 0.5f, transform.localScale.y + 0.5f, transform.localScale.z);
         }
 
-        else if(collision.gameObject.CompareTag("Ground"))
+        else if(collision.gameObject.CompareTag("DestroyShadow"))
         {
             Debug.Log("Shadow Hit Ground");
             Destroy(gameObject);

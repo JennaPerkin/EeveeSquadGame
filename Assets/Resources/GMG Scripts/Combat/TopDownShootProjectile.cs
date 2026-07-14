@@ -78,8 +78,8 @@ public class TopDownShootProjectile : MonoBehaviour {
 
 				targetTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 							
-				forceComponent.force = new Vector2(vectorToTarget.normalized.x * projectileSpeed, 
-				vectorToTarget.normalized.y * projectileSpeed);
+				forceComponent.force = new Vector2(vectorToTarget.x * projectileSpeed, 
+				vectorToTarget.y * projectileSpeed);
 			}
 			else
 			{
