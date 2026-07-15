@@ -12,7 +12,10 @@ public class Wander : Physics2DObject
 	public float directionChangeInterval = 3f;
 	public bool keepNearStartingPoint = true;
 
-	[Header("Orientation")]
+	/*[Header("Follow")]
+	public GameObject target;*/
+
+    [Header("Orientation")]
 	public bool orientToDirection = false;
 	// The direction that the GameObject will be oriented to
 	public Enums.Directions lookAxis = Enums.Directions.Up;
@@ -25,8 +28,9 @@ public class Wander : Physics2DObject
 	// Start is called at the beginning of the game
 	private void Start()
 	{
-		//we don't want directionChangeInterval to be 0, so we force it to a minimum value ;)
-		if(directionChangeInterval < 0.1f)
+		//target = GameObject.FindGameObjectWithTag("Player");
+        //we don't want directionChangeInterval to be 0, so we force it to a minimum value ;)
+        if (directionChangeInterval < 0.1f)
 		{
 			directionChangeInterval = 0.1f;
 		}
@@ -78,5 +82,21 @@ public class Wander : Physics2DObject
 	private void FixedUpdate()
 	{
 		rigidbody2D.AddForce(direction * speed);
+
 	}
+
+	/*private void Update()
+	{
+        if (target.transform.position.y - transform.position.y < 0.5 && target.transform.position.x - transform.position.x < 0.5)
+        {
+            Debug.Log("FollowingPlayer");
+			//rigidbody2D.MovePosition(Vector2.Lerp(transform.position, target.transform.position, Time.fixedDeltaTime * speed));
+			direction = target.transform.position - transform.position;
+        }
+
+		else
+		{
+            direction = (startingPoint - transform.position).normalized;
+        }
+    }*/
 }
