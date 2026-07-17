@@ -27,21 +27,15 @@ public class DialogueBalloonAction : Action
 	{
 		if(!balloonIsActive)
 		{
-			DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
-			if(d == null)
-			{
-				//Dialogue System is not in the scene
-				Debug.LogWarning("You need a UI in the scene to display dialogue!");
-				return false;
-			}
-			
-			//Dialogue System is found
-			b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
-			b.BalloonDestroyed += OnBalloonDestroyed;
-			balloonIsActive = true;
-			
-			StartCoroutine(WaitForBallonDestroyed());
-			return true;
+            StartCoroutine(timer());
+            DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
+            if (d == null)
+            {
+                //Dialogue System is not in the scene
+                Debug.LogWarning("You need a UI in the scene to display dialogue!");
+                return false;
+            }
+            return true;
 		}
 		else
 		{
@@ -72,4 +66,16 @@ public class DialogueBalloonAction : Action
 		Time = 0,
 		ButtonPress = 1,
 	}
+
+	IEnumerator timer()
+	{
+        yield return new WaitForSeconds(0.2f);
+        DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
+        //Dialogue System is found
+        b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
+        b.BalloonDestroyed += OnBalloonDestroyed;
+        balloonIsActive = true;
+
+        StartCoroutine(WaitForBallonDestroyed());
+    }
 }

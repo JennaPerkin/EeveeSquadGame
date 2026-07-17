@@ -12,11 +12,14 @@ public class CollectableAttribute : MonoBehaviour
 
     public AudioSource audioSrc;
 
-	private void Start()
+    private ProgressionVariables progressionCheck;
+
+    private void Start()
 	{
 		// Find the UI in the scene and store a reference for later use
 		userInterface = GameObject.FindObjectOfType<UIScript>();
-	}
+        progressionCheck = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ProgressionVariables>();
+    }
 
 
 	//This will create a dialog window asking for which dialog to add
@@ -39,6 +42,8 @@ public class CollectableAttribute : MonoBehaviour
 				// add one point
 				int playerId = (playerTag == "Player") ? 0 : 1;
 				userInterface.AddPoints(playerId, pointsWorth);
+				progressionCheck.soulsCollected += 1;
+				Debug.Log("Souls Collected: " + progressionCheck.soulsCollected);
 			}
             if (playSound && audioSrc != null)
             {
