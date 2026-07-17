@@ -1384,7 +1384,7 @@ Transform:
   m_GameObject: {fileID: 227850831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4732265, y: 0.54486996, z: -10}
+  m_LocalPosition: {x: -6.4696364, y: 1.30487, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9978,7 +9978,7 @@ Transform:
   m_GameObject: {fileID: 1542258134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.91, y: 0.55, z: -10}
+  m_LocalPosition: {x: -9.91, y: 1.31, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10563,6 +10563,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6516806022293083104, guid: 323554bea6af9e643b8e8cca60b52025, type: 3}
+      propertyPath: LevelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516806022293083104, guid: 323554bea6af9e643b8e8cca60b52025, type: 3}
+      propertyPath: needsFireResistancePotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10590,7 +10598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9001760690386318210, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.55
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 9001760690386318210, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_LocalPosition.z
