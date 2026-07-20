@@ -27,7 +27,7 @@ public class Move : Physics2DObject
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         Debug.Log(animator);
     }
     // Update gets called every frame
