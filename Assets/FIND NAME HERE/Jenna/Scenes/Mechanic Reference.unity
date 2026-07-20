@@ -1384,7 +1384,7 @@ Transform:
   m_GameObject: {fileID: 227850831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4696364, y: 1.30487, z: -10}
+  m_LocalPosition: {x: -6.4732265, y: 0.54486996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2282,54 +2282,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224000012685850840, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660215487898942873, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3323750730025662789, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10026,7 +9978,7 @@ Transform:
   m_GameObject: {fileID: 1542258134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.91, y: 1.31, z: -10}
+  m_LocalPosition: {x: -9.91, y: 0.55, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10611,18 +10563,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6516806022293083104, guid: 323554bea6af9e643b8e8cca60b52025, type: 3}
-      propertyPath: LevelToLoad
-      value: Mechanic Reference
-      objectReference: {fileID: 0}
-    - target: {fileID: 6516806022293083104, guid: 323554bea6af9e643b8e8cca60b52025, type: 3}
-      propertyPath: needsGiftofMnemosyne
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6516806022293083104, guid: 323554bea6af9e643b8e8cca60b52025, type: 3}
-      propertyPath: needsFireResistancePotion
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10650,7 +10590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9001760690386318210, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.31
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 9001760690386318210, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10699,19 +10639,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2247608760593521204, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: m_Size.y
-      value: 1.69
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 2247608760593521204, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: m_Offset.y
-      value: -1.84
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 3888802037448811001, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: textAfterQuest
-      value: Here's the Gift of Mnemosyne
+      value: Good Job
       objectReference: {fileID: 0}
     - target: {fileID: 3888802037448811001, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: textBeforeQuest
-      value: 4 Souls and 5 Enemies
+      value: Kill More Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 3888802037448811001, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: givesGiftofMnemosyne
@@ -10719,11 +10659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3888802037448811001, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: minimumEnemiesKilled
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3888802037448811001, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: minimumSoulsCollected
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4131922210219435330, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: m_Name
@@ -10787,7 +10727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: timeToDisappear
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: backgroundColor.b
