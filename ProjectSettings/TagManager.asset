@@ -9,6 +9,7 @@ TagManager:
   - Shadow
   - DestroyShadow
   - GameManager
+  - EnemyKilledUI
   layers:
   - Default
   - TransparentFX
