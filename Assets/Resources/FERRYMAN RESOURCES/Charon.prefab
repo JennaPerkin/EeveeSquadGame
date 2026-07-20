@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6171262894984913942}
   - component: {fileID: 3271220695927323128}
   - component: {fileID: 6531501255542173151}
+  - component: {fileID: 2989414202462133213}
   m_Layer: 0
   m_Name: Charon
   m_TagString: Player
@@ -221,3 +222,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   isPaused: 0
+--- !u!114 &2989414202462133213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201768214870816542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e6cf5f6597f06488c78822de9e9586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharonAnimationConditions
