@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6171262894984913942}
   - component: {fileID: 3271220695927323128}
   - component: {fileID: 6531501255542173151}
+  - component: {fileID: 3668616271358271668}
+  - component: {fileID: 6182713445432775276}
   m_Layer: 0
   m_Name: Charon
   m_TagString: Player
@@ -221,3 +223,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   isPaused: 0
+--- !u!114 &3668616271358271668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201768214870816542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347f09ca1b91d774280d5b29bb017311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharonAnimationCondiitions
+  anim: {fileID: 6182713445432775276}
+--- !u!95 &6182713445432775276
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201768214870816542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fab01554ede41034d9793dd25ea60384, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
