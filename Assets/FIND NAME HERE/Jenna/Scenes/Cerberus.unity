@@ -784,6 +784,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &275059383 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 926578753732410412, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
+  m_PrefabInstance: {fileID: 1394532798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d926fec57fb4c411a912d607e2822370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &297662704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2141,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7055256308279687567, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
+      propertyPath: moveScript
+      value: 
+      objectReference: {fileID: 275059383}
     - target: {fileID: 7201768214870816542, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_Name
       value: Charon

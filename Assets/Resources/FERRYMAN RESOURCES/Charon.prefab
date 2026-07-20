@@ -144,6 +144,8 @@ MonoBehaviour:
   movementType: 0
   orientToDirection: 0
   lookAxis: 1
+  moveHorizontal: 0
+  moveVertical: 0
   animator: {fileID: 0}
 --- !u!61 &6171262894984913942
 BoxCollider2D:
@@ -236,6 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharonAnimationConditions
   anim: {fileID: 4762429630736626005}
+  moveScript: {fileID: 926578753732410412}
 --- !u!95 &4762429630736626005
 Animator:
   serializedVersion: 7

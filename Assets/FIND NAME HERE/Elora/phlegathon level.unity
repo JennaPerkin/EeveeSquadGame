@@ -10171,6 +10171,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1506357593}
+    - target: {fileID: 7055256308279687567, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1506357593}
     - target: {fileID: 7201768214870816542, guid: b6524a5b43e061948b6bdc2efdde4199, type: 3}
       propertyPath: m_Name
       value: Charon
@@ -15928,7 +15932,7 @@ Animator:
   m_GameObject: {fileID: 1165292890}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 699d5ba743dc2f140b577ca107a73061, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d2fa0954369e284aa701e0f988445f2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
