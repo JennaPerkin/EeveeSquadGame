@@ -6,8 +6,10 @@ public class EnemyDeath : MonoBehaviour
 {
     private ProgressionVariables progressionCheck;
     private Text enemiesKilledText;
+    public AudioSource audioSrc;
     void Start()
     {
+        audioSrc = GetComponent<AudioSource>();
         progressionCheck = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ProgressionVariables>();
         enemiesKilledText = GameObject.FindGameObjectWithTag("EnemyKilledUI").GetComponent<Text>();
     }
@@ -17,6 +19,7 @@ public class EnemyDeath : MonoBehaviour
         if(gameObject != null)
         {
             GetComponent<BoxCollider2D>().enabled = false;
+            audioSrc.Play();
             Destroy(gameObject);
             progressionCheck.enemiesDefeated += 1;
             enemiesKilledText.text = progressionCheck.enemiesDefeated.ToString();

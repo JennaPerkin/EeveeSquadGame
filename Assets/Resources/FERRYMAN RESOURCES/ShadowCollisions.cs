@@ -6,10 +6,8 @@ public class ShadowCollisions : MonoBehaviour
 {
     private ProgressionVariables progressionCheck;
     private Text enemiesKilledText;
-    public AudioSource audioSrc;
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
         progressionCheck = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ProgressionVariables>();
         enemiesKilledText = GameObject.FindGameObjectWithTag("EnemyKilledUI").GetComponent<Text>();
     }
@@ -23,7 +21,6 @@ public class ShadowCollisions : MonoBehaviour
             {
                 collision.GetComponent<EnemyDeath>().Death();
                 collision.GetComponent<BoxCollider2D>().enabled = false;
-                audioSrc.Play();
                 //Debug.Log("Hit Shadow");
                 //Destroy(collision.gameObject);
                 transform.localScale = new Vector3(transform.localScale.x + 0.5f, transform.localScale.y + 0.5f, transform.localScale.z);

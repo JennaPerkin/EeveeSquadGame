@@ -1384,7 +1384,7 @@ Transform:
   m_GameObject: {fileID: 227850831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4732265, y: 0.54486996, z: -10}
+  m_LocalPosition: {x: -6.4742813, y: 0.54488, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10767,6 +10767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 5805304989621009118, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b3ab95c8ca414b40b0d120128093951, type: 3}
     - target: {fileID: 6727109100894112175, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.55

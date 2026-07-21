@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7b4a40399682b4ebe3668409c0b44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  audioSrc: {fileID: 365912262170004801}
 --- !u!82 &365912262170004801
 AudioSource:
   m_ObjectHideFlags: 0
