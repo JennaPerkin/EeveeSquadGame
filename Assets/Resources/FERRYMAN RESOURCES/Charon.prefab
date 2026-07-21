@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 6171262894984913942}
   - component: {fileID: 3271220695927323128}
   - component: {fileID: 6531501255542173151}
-  - component: {fileID: 2621860739481783765}
-  - component: {fileID: 7628274997374568622}
+  - component: {fileID: 7055256308279687567}
+  - component: {fileID: 4762429630736626005}
   m_Layer: 0
   m_Name: Charon
   m_TagString: Player
@@ -142,8 +142,10 @@ MonoBehaviour:
   typeOfControl: 0
   speed: 1
   movementType: 0
-  orientToDirection: 1
+  orientToDirection: 0
   lookAxis: 1
+  moveHorizontal: 0
+  moveVertical: 0
   animator: {fileID: 0}
 --- !u!61 &6171262894984913942
 BoxCollider2D:
@@ -223,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   isPaused: 0
---- !u!114 &2621860739481783765
+--- !u!114 &7055256308279687567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,11 +234,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7201768214870816542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9efcd1104e0be1a4b806e179ef76a5bd, type: 3}
+  m_Script: {fileID: 11500000, guid: b94674cc03be33443a84062a7547dfdf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharonAnimConditions
-  anim: {fileID: 7628274997374568622}
---- !u!95 &7628274997374568622
+  m_EditorClassIdentifier: Assembly-CSharp::CharonAnimationConditions
+  anim: {fileID: 4762429630736626005}
+  moveScript: {fileID: 926578753732410412}
+--- !u!95 &4762429630736626005
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -246,7 +249,7 @@ Animator:
   m_GameObject: {fileID: 7201768214870816542}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bcbf4ef3296c35d4786c6b8077505af0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d2fa0954369e284aa701e0f988445f2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
