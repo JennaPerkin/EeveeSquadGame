@@ -9,8 +9,9 @@ public class DialogueBalloonAction : Action
 	public string textToDisplay = "Hey!";
 	public Color backgroundColor = new Color32(113, 132, 146, 255);
 	public Color textColor = Color.white;
+    public AudioSource audioSrc;
 
-	[Header("Options")]
+    [Header("Options")]
 	public Transform targetObject;
 	public DisappearMode disappearMode = DisappearMode.ButtonPress;
 	public float timeToDisappear = 2f;
@@ -22,6 +23,10 @@ public class DialogueBalloonAction : Action
 	private BalloonScript b;
 	private bool balloonIsActive = false;
 
+	void Start()
+	{
+		audioSrc = GetComponent<AudioSource>();
+	}
 
 	public override bool ExecuteAction(GameObject other)
 	{
@@ -72,6 +77,7 @@ public class DialogueBalloonAction : Action
         yield return new WaitForSeconds(0.2f);
         DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
         //Dialogue System is found
+        audioSrc.Play();
         b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
         b.BalloonDestroyed += OnBalloonDestroyed;
         balloonIsActive = true;
