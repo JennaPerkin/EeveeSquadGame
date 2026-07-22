@@ -44,7 +44,7 @@ public class CharonAnimationConditions : MonoBehaviour
         if(moveScript.moveHorizontal >= 0.1)
         {
             anim.SetBool("IsMovingRight", true);
-            anim.SetBool("isMovingLeft", false);
+            anim.SetBool("IsMovingLeft", false);
             anim.SetBool("IsMovingDown", false);
         }
         if(moveScript.moveHorizontal < 0)

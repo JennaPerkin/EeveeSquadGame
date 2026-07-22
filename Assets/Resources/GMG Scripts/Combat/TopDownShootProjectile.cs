@@ -60,7 +60,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 			
 			ConstantForce2D forceComponent = projectile.AddComponent<ConstantForce2D>();
 
-			projSprite.flipX = sprite.flipX;
+			//projSprite.flipX = sprite.flipX;
 			if (fireInDirectionOfMouseCursor)
 			{
 				Transform targetTransform = projectile.transform;
@@ -70,10 +70,10 @@ public class TopDownShootProjectile : MonoBehaviour {
 
 				float tempAngle = angle + 270;
 
-				if      (tempAngle >= 135 && tempAngle < 225) SetFace(Direction.Right);
+				/*if      (tempAngle >= 135 && tempAngle < 225) SetFace(Direction.Right);
 				else if (tempAngle >= 225 && tempAngle < 315) SetFace(Direction.Up);
 				else if (tempAngle >=  45 && tempAngle <  135) SetFace(Direction.Down);
-				else SetFace(Direction.Left);
+				else SetFace(Direction.Left);*/
 				
 
 				targetTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -81,7 +81,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 				forceComponent.force = new Vector2(vectorToTarget.x * projectileSpeed, 
 				vectorToTarget.y * projectileSpeed);
 			}
-			else
+			/*else
 			{
 				if (animator != null)
 				{
@@ -90,7 +90,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 					else forceComponent.force = new Vector2((projSprite.flipX) ? -1*projectileSpeed : projectileSpeed, 0f);
 				}
 				else forceComponent.force = new Vector2((projSprite.flipX) ? -1*projectileSpeed : projectileSpeed, 0f);
-			}
+			}*/
 
 			Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 			if (!audioSrc.isPlaying) audioSrc.Play();
@@ -106,7 +106,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 		if (direction == Direction.Left)sprite.flipX = true;
 		else if (direction == Direction.Right) sprite.flipX = false;
 		
-		if (animator == null) return;
+		/*if (animator == null) return;
 		animator.SetBool("FacingLeft", false);
 		animator.SetBool("FacingRight", false);
 		animator.SetBool("FacingUp", false);
@@ -115,7 +115,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 		if (direction == Direction.Right)animator.SetBool("FacingRight", true);
 		if (direction == Direction.Up)animator.SetBool("FacingUp", true);
 		if (direction == Direction.Down)animator.SetBool("FacingDown", true);
-		if (direction == Direction.Left)animator.SetBool("FacingLeft", true);
+		if (direction == Direction.Left)animator.SetBool("FacingLeft", true);*/
 	}	
 	// Update is called once per frame
 	float fireRateCounter = 0f;
@@ -134,15 +134,15 @@ public class TopDownShootProjectile : MonoBehaviour {
 
 		if (inputMgr.GetKeyUp(shootButton) && animator != null)
 		{
-			animator.SetBool("isShooting", false);
+			//animator.SetBool("isShooting", false);
 			audioSrc.Stop();
 		}
 
-		if (inputMgr.GetKeyDown(shootButton) && animator != null) animator.SetBool("isShooting", true);
+		//if (inputMgr.GetKeyDown(shootButton) && animator != null) animator.SetBool("isShooting", true);
 
 		if (inputMgr.GetKey(shootButton))
 		{
-			if (animator != null) animator.SetBool("isShooting", true);
+			//if (animator != null) animator.SetBool("isShooting", true);
 
 			if (fireRateCounter == 0f)
 			{
