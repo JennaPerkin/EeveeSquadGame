@@ -16,6 +16,7 @@ public class EnemyDeath : MonoBehaviour
 
     public void Death()
     {
+        Debug.Log("Enemy Dies");
         if(gameObject != null)
         {
             GetComponent<BoxCollider2D>().enabled = false;

@@ -23,8 +23,8 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
-    m_path: Assets/FIND NAME HERE/Jenna/Scenes/Main Menu.unity
-    m_guid: d1cd41730d947f148bae52ad3aa121cd
+    m_path: Assets/FIND NAME HERE/Charlotte/Main Menu.unity
+    m_guid: 6ef55c4e5349bff42bfee380400b7f56
   - m_enabled: 1
     m_path: Assets/FIND NAME HERE/Aurora/Acheron River Level.unity
     m_guid: b5e45cc841e96c3479ec0ddbf06dcbd7
