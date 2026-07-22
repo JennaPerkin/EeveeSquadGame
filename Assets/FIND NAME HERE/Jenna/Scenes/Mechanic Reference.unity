@@ -1647,6 +1647,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152d6d7559e3abc4990d29714a977f3b, type: 3}
+--- !u!1 &366123545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4131922210219435330, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
+  m_PrefabInstance: {fileID: 8895643347792366040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &396739888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10828,6 +10833,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
+      propertyPath: followingText
+      value: 
+      objectReference: {fileID: 8895643347792366043}
+    - target: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
+      propertyPath: textToDisplay
+      value: This is the first dialogue balloon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
       propertyPath: timeToDisappear
       value: 5
       objectReference: {fileID: 0}
@@ -10855,19 +10868,43 @@ PrefabInstance:
     - {fileID: 7043842349994569536, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4131922210219435330, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 8895643347792366043}
   m_SourcePrefab: {fileID: 100100000, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
 --- !u!114 &8895643347792366041 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7583356853402272727, guid: 7696d47c2a858734db3e4aa5dc65c994, type: 3}
   m_PrefabInstance: {fileID: 8895643347792366040}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 366123545}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9117653835b354259a0c03ce702840f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueBalloonAction
+--- !u!114 &8895643347792366043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366123545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9117653835b354259a0c03ce702840f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueBalloonAction
+  textToDisplay: This is the second dialogue balloon.
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  audioSrc: {fileID: 0}
+  targetObject: {fileID: 963251646}
+  disappearMode: 0
+  timeToDisappear: 5
+  keyToPress: 13
+  followingText: {fileID: 0}
 --- !u!1001 &9217564851131755078
 PrefabInstance:
   m_ObjectHideFlags: 0
