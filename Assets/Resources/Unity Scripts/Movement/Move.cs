@@ -23,12 +23,12 @@ public class Move : Physics2DObject
 	public float moveVertical;
 
     //Animations
-    public Animator animator;
+    //public Animator animator;
 
     private void Start()
     {
         //animator = GetComponent<Animator>();
-        Debug.Log(animator);
+        //Debug.Log(animator);
     }
     // Update gets called every frame
     void Update ()
@@ -59,7 +59,7 @@ public class Move : Physics2DObject
 		}
 			
 		movement = new Vector3(moveHorizontal, moveVertical);
-        if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
+        //if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
 
 
 		//rotate the GameObject towards the direction of movement

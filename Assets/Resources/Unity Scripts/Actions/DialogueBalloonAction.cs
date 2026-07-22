@@ -77,7 +77,10 @@ public class DialogueBalloonAction : Action
         yield return new WaitForSeconds(0.2f);
         DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
         //Dialogue System is found
-        audioSrc.Play();
+		if(audioSrc != null)
+		{
+            audioSrc.Play();
+        }
         b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
         b.BalloonDestroyed += OnBalloonDestroyed;
         balloonIsActive = true;
