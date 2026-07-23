@@ -35,8 +35,8 @@ MonoBehaviour:
     m_path: Assets/FIND NAME HERE/Elora/phlegathon level.unity
     m_guid: c58755181c123134e8c43ecee96572f9
   - m_enabled: 1
-    m_path: Assets/FIND NAME HERE/Jenna/Scenes/Cerberus.unity
-    m_guid: 28aa2bc11986b5d4e9cee8494794b20c
+    m_path: Assets/FIND NAME HERE/Jenna/Scenes/Cerberus 1.unity
+    m_guid: caa958eee69566444ad8a8e9c620504b
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
