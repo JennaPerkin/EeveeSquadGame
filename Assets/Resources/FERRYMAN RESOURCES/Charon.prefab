@@ -146,7 +146,6 @@ MonoBehaviour:
   lookAxis: 1
   moveHorizontal: 0
   moveVertical: 0
-  animator: {fileID: 0}
 --- !u!61 &6171262894984913942
 BoxCollider2D:
   m_ObjectHideFlags: 0

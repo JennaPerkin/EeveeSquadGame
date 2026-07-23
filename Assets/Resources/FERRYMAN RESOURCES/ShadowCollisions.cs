@@ -14,13 +14,19 @@ public class ShadowCollisions : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Shadow Hit Something");
+        //Debug.Log("Shadow Hit Something");
         if(collision.gameObject.CompareTag("Shadow"))
         {
             if(collision != null)
             {
-                collision.GetComponent<EnemyDeath>().Death();
-                collision.GetComponent<BoxCollider2D>().enabled = false;
+                GameObject enemy = collision.gameObject;
+                enemy.GetComponent<BoxCollider2D>().enabled = false;
+                bool isKilledEnemy = false;
+                if(!isKilledEnemy)
+                {
+                    isKilledEnemy = true;
+                    collision.GetComponent<EnemyDeath>().Death();
+                }
                 //Debug.Log("Hit Shadow");
                 //Destroy(collision.gameObject);
                 transform.localScale = new Vector3(transform.localScale.x + 0.5f, transform.localScale.y + 0.5f, transform.localScale.z);

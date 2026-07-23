@@ -7,6 +7,7 @@ public class EnemyDeath : MonoBehaviour
     private ProgressionVariables progressionCheck;
     private Text enemiesKilledText;
     public AudioSource audioSrc;
+    bool hasPointBeenScored = false;
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
@@ -16,18 +17,17 @@ public class EnemyDeath : MonoBehaviour
 
     public void Death()
     {
-        Debug.Log("Enemy Dies");
-        if(gameObject != null)
+        Destroy(gameObject);
+        if (!hasPointBeenScored)
         {
-            GetComponent<BoxCollider2D>().enabled = false;
-            if(audioSrc != null)
-            {
-                audioSrc.Play();
-            }
-            Destroy(gameObject);
+            hasPointBeenScored = true;
             progressionCheck.enemiesDefeated += 1;
             enemiesKilledText.text = progressionCheck.enemiesDefeated.ToString();
             Debug.Log("Enemies Defeated: " + progressionCheck.enemiesDefeated);
+        }
+        if (audioSrc != null)
+        {
+            audioSrc.Play();
         }
     }
 }
