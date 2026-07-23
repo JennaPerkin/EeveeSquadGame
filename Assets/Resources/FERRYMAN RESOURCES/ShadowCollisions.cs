@@ -36,7 +36,7 @@ public class ShadowCollisions : MonoBehaviour
             }
         }
 
-        else if(collision.gameObject.CompareTag("DestroyShadow"))
+        else if(collision.gameObject.CompareTag("Ground"))
         {
             //Debug.Log("Shadow Hit Ground");
             Destroy(gameObject);
