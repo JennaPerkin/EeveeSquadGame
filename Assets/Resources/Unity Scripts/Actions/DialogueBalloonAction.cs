@@ -22,11 +22,15 @@ public class DialogueBalloonAction : Action
 
 	private BalloonScript b;
 	private bool balloonIsActive = false;
+	public Move playerScript;
+	private float playerSpeed;
 
 	void Start()
 	{
 		audioSrc = GetComponent<AudioSource>();
-	}
+		playerScript = GameObject.FindWithTag("Player").GetComponent<Move>();
+		playerSpeed = playerScript.speed;
+    }
 
 	public override bool ExecuteAction(GameObject other)
 	{
@@ -64,6 +68,10 @@ public class DialogueBalloonAction : Action
 		{
 			followingText.ExecuteAction(this.gameObject);
 		}
+		else
+		{
+			playerScript.speed = playerSpeed;
+		}
 	}
 
 	public enum DisappearMode
@@ -77,10 +85,14 @@ public class DialogueBalloonAction : Action
         yield return new WaitForSeconds(0.2f);
         DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
         //Dialogue System is found
-        audioSrc.Play();
+		if(audioSrc != null)
+		{
+            audioSrc.Play();
+        }
         b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
         b.BalloonDestroyed += OnBalloonDestroyed;
         balloonIsActive = true;
+		playerScript.speed = 0f;
 
         StartCoroutine(WaitForBallonDestroyed());
     }

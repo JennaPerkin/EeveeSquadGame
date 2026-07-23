@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 926578753732410412}
   - component: {fileID: 6171262894984913942}
   - component: {fileID: 3271220695927323128}
-  - component: {fileID: 6531501255542173151}
   - component: {fileID: 7055256308279687567}
   - component: {fileID: 4762429630736626005}
+  - component: {fileID: 2998102127567370735}
+  - component: {fileID: 5347804803886257046}
   m_Layer: 0
   m_Name: Charon
   m_TagString: Player
@@ -146,7 +147,6 @@ MonoBehaviour:
   lookAxis: 1
   moveHorizontal: 0
   moveVertical: 0
-  animator: {fileID: 0}
 --- !u!61 &6171262894984913942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,19 +212,6 @@ MonoBehaviour:
   fireInDirectionOfMouseCursor: 1
   soundFile: {fileID: 0}
   LoopSound: 0
---- !u!114 &6531501255542173151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7201768214870816542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ef6244fb14fde49a88d9375bd48ae0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  isPaused: 0
 --- !u!114 &7055256308279687567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,3 +248,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2998102127567370735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201768214870816542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb970c45b40bb4652a8310660a03dfb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
+  health: 10
+--- !u!114 &5347804803886257046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201768214870816542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ef6244fb14fde49a88d9375bd48ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  isPaused: 0

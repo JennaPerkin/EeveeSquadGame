@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 539426249843486976}
   - component: {fileID: 1217022798736692945}
   - component: {fileID: 365912262170004801}
+  - component: {fileID: 6589210551525732430}
   m_Layer: 0
   m_Name: ShadowMonster
   m_TagString: Shadow
@@ -261,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7b4a40399682b4ebe3668409c0b44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  audioSrc: {fileID: 365912262170004801}
 --- !u!82 &365912262170004801
 AudioSource:
   m_ObjectHideFlags: 0
@@ -358,3 +360,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6589210551525732430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8054686748007138518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa3c260db47248a18ecb8112019040d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModifyHealthAttribute
+  destroyWhenActivated: 0
+  healthChange: -1

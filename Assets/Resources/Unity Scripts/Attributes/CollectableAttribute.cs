@@ -12,6 +12,8 @@ public class CollectableAttribute : MonoBehaviour
 
     public AudioSource audioSrc;
 
+	public Animator anim;
+
     private ProgressionVariables progressionCheck;
 
     private void Start()
@@ -19,6 +21,7 @@ public class CollectableAttribute : MonoBehaviour
 		// Find the UI in the scene and store a reference for later use
 		userInterface = GameObject.FindObjectOfType<UIScript>();
         progressionCheck = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ProgressionVariables>();
+		anim = GetComponent<Animator>();
     }
 
 
@@ -49,8 +52,9 @@ public class CollectableAttribute : MonoBehaviour
             {
                 audioSrc.Play();
             }
-            // then destroy this object
-            Destroy(gameObject);
+			// then destroy this object
+			anim.SetBool("IsBeingCollected", true);
+            Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
 		}
 	}
 }

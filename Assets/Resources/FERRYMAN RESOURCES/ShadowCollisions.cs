@@ -6,24 +6,27 @@ public class ShadowCollisions : MonoBehaviour
 {
     private ProgressionVariables progressionCheck;
     private Text enemiesKilledText;
-    public AudioSource audioSrc;
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
         progressionCheck = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ProgressionVariables>();
         enemiesKilledText = GameObject.FindGameObjectWithTag("EnemyKilledUI").GetComponent<Text>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Shadow Hit Something");
+        //Debug.Log("Shadow Hit Something");
         if(collision.gameObject.CompareTag("Shadow"))
         {
             if(collision != null)
             {
-                collision.GetComponent<EnemyDeath>().Death();
-                collision.GetComponent<BoxCollider2D>().enabled = false;
-                audioSrc.Play();
+                GameObject enemy = collision.gameObject;
+                enemy.GetComponent<BoxCollider2D>().enabled = false;
+                bool isKilledEnemy = false;
+                if(!isKilledEnemy)
+                {
+                    isKilledEnemy = true;
+                    collision.GetComponent<EnemyDeath>().Death();
+                }
                 //Debug.Log("Hit Shadow");
                 //Destroy(collision.gameObject);
                 transform.localScale = new Vector3(transform.localScale.x + 0.5f, transform.localScale.y + 0.5f, transform.localScale.z);
@@ -33,7 +36,7 @@ public class ShadowCollisions : MonoBehaviour
             }
         }
 
-        else if(collision.gameObject.CompareTag("DestroyShadow"))
+        else if(collision.gameObject.CompareTag("Ground"))
         {
             //Debug.Log("Shadow Hit Ground");
             Destroy(gameObject);
