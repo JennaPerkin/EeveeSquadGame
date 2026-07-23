@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -8228201004641350518}
   - component: {fileID: 8713716946432724778}
   - component: {fileID: 7181628008471634317}
-  - component: {fileID: 2180724466696646408}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -181,17 +180,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9eea353aac996499aff094d20705f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2180724466696646408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6838195860478125434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fa3c260db47248a18ecb8112019040d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ModifyHealthAttribute
-  destroyWhenActivated: 1
-  healthChange: -1
