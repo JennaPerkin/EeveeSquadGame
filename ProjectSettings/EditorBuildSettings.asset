@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FIND NAME HERE/Jenna/Scenes/Demo/Level2.unity
     guid: 622f97e42d9bfa0408d7c4333135f14f
+  - enabled: 1
+    path: Assets/FIND NAME HERE/Aurora/Beginning Transition.unity
+    guid: c8e01938454f7d349a6b70475269b489
+  - enabled: 1
+    path: Assets/FIND NAME HERE/Aurora/Acheron River Level.unity
+    guid: b5e45cc841e96c3479ec0ddbf06dcbd7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}

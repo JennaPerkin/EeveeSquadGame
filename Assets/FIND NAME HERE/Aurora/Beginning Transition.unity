@@ -170,7 +170,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 7.250477, y: 1.8685648}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -191,7 +191,136 @@ Transform:
   m_GameObject: {fileID: 247053827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5109, y: -0.08763, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &478757989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478757991}
+  - component: {fileID: 478757990}
+  m_Layer: 0
+  m_Name: Moosic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &478757990
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478757989}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e9354519a24c7ac45942af9a6fb46fec, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &478757991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478757989}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.11971, y: 0.03389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -571,7 +700,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1056118643}
   - component: {fileID: 1056118642}
-  - component: {fileID: 1056118641}
+  - component: {fileID: 1056118645}
+  - component: {fileID: 1056118644}
   m_Layer: 0
   m_Name: NextLevel
   m_TagString: Untagged
@@ -579,23 +709,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1056118641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056118640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c25f7f600f22974fb816431a3a412bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadLevelWithCondition
-  LevelToLoad: Acheron River Level
-  needsGiftofMnemosyne: 0
-  needsFireResistancePotion: 0
-  needsGiftFromEuphrosyne: 0
-  needsTrueSight: 0
 --- !u!61 &1056118642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -626,7 +739,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -657,6 +770,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1056118644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056118640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
+  actions:
+  - {fileID: 1056118645}
+  useCustomActions: 0
+  customActions:
+    m_PersistentCalls:
+      m_Calls: []
+  happenOnlyOnce: 0
+  filterByTag: 0
+  filterTag: Player
+  frequency: 1
+  eventType: 0
+--- !u!114 &1056118645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056118640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
+  levelName: Acheron River Level
 --- !u!1 &1334896134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,6 +3964,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 0}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3836,6 +3986,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911675}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3857,6 +4008,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911676}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3878,6 +4030,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911677}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,6 +4052,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911678}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3920,6 +4074,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911679}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,7 +4087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9117653835b354259a0c03ce702840f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueBalloonAction
-  textToDisplay: And the Cocytus, river of sorrow.
+  textToDisplay: The Cocytus, river of sorrow. And of course, the Styx.
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}
   audioSrc: {fileID: 0}
@@ -3941,6 +4096,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911680}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3962,6 +4118,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911681}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3983,6 +4140,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911682}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4004,6 +4162,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911683}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4025,6 +4184,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911684}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4046,6 +4206,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911685}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4067,6 +4228,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911686}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4088,6 +4250,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911687}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4109,6 +4272,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911688}
+  playerScript: {fileID: 0}
 --- !u!114 &1675911690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4130,6 +4294,7 @@ MonoBehaviour:
   timeToDisappear: 2
   keyToPress: 13
   followingText: {fileID: 1675911689}
+  playerScript: {fileID: 0}
 --- !u!61 &1675911691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4283,3 +4448,4 @@ SceneRoots:
   - {fileID: 247053829}
   - {fileID: 539943135}
   - {fileID: 1056118643}
+  - {fileID: 478757991}
