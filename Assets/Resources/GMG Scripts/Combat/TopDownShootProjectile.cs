@@ -140,7 +140,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 
 		//if (inputMgr.GetKeyDown(shootButton) && animator != null) animator.SetBool("isShooting", true);
 
-		if (inputMgr.GetKey(shootButton))
+		if (inputMgr.GetKeyDown(shootButton))
 		{
 			//if (animator != null) animator.SetBool("isShooting", true);
 

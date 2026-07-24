@@ -12,17 +12,26 @@ public class ShadowCollisions : MonoBehaviour
         enemiesKilledText = GameObject.FindGameObjectWithTag("EnemyKilledUI").GetComponent<Text>();
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("ShadowCollided");
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Shadow Hit Something");
-        if(collision.gameObject.CompareTag("Shadow"))
+        if (collision.gameObject.CompareTag("Shadow"))
         {
-            if(collision != null)
+            if (collision != null)
             {
                 GameObject enemy = collision.gameObject;
                 enemy.GetComponent<BoxCollider2D>().enabled = false;
                 bool isKilledEnemy = false;
-                if(!isKilledEnemy)
+                if (!isKilledEnemy)
                 {
                     isKilledEnemy = true;
                     collision.GetComponent<EnemyDeath>().Death();
@@ -34,12 +43,6 @@ public class ShadowCollisions : MonoBehaviour
                 //enemiesKilledText.text = progressionCheck.enemiesDefeated.ToString();
                 //Debug.Log("Enemies Defeated: " + progressionCheck.enemiesDefeated);
             }
-        }
-
-        else if(collision.gameObject.CompareTag("Ground"))
-        {
-            //Debug.Log("Shadow Hit Ground");
-            Destroy(gameObject);
         }
     }
 }

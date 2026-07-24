@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4762429630736626005}
   - component: {fileID: 2998102127567370735}
   - component: {fileID: 5347804803886257046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Charon
   m_TagString: Player
   m_Icon: {fileID: 0}

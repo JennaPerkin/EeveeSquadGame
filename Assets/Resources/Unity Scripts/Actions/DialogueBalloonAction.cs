@@ -92,7 +92,7 @@ public class DialogueBalloonAction : Action
         b = d.CreateBalloon(textToDisplay, (disappearMode == DisappearMode.ButtonPress), keyToPress, timeToDisappear, backgroundColor, textColor, targetObject);
         b.BalloonDestroyed += OnBalloonDestroyed;
         balloonIsActive = true;
-		playerScript.speed = 0f;
+		playerScript.speed = 0.1f;
 
         StartCoroutine(WaitForBallonDestroyed());
     }
